@@ -1,0 +1,126 @@
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    margin: 40px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card {
+    width: calc(25% - 40px);
+    border: 1px solid #F3F3F3;
+    border-radius: 40px;
+    padding: 20px 29px 34px 30px;
+    transition: .5s;
+}
+.card:hover {
+    border: 1px solid #8BB43C;
+    transition: .5s;
+    transform: translateY(-15px);
+    box-shadow: 0 14px 30px rgba(139, 180, 60, 0.5);
+}
+
+.cardTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin: 14px 0;
+}
+
+.cardImg {
+    width: 100%;
+}
+
+.cardFooter {
+    display: flex;
+    column-gap: 30px;
+}
+
+.cardPrice {
+
+}
+
+.cardPriceTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+.cardPriceNum {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.cardBtn {
+    background: #FFFFFF;
+    border: 1px solid #00000030;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    color: #D3D3D3;
+}
+
+.cardBtnCheck {
+    background: forestgreen;
+    border: 1px solid #00000030;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 5px;
+    color: #D3D3D3;
+    font-size: 20px;
+}
+
+.cardLike {
+    background: #FFFFFF;
+    border: 1px solid #00000030;
+    border-radius: 7px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    border: 1px solid #8BB43C;
+    border-radius: 10px;
+    outline: none;
+    width: 250px;
+    height: 45px;
+    color: black;
+    padding-left: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.search::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+}
