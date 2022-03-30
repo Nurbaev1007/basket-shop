@@ -16,7 +16,7 @@ const Slider = () => {
 
     return (
         <section className={slider}>
-            <Swiper>
+            <Swiper navigation={true} modules={[Navigation]} className='mySwiper'>
                 <SwiperSlide>
                     <div className={sliderContent}>
                         <div className={sliderLeft}>
@@ -34,7 +34,19 @@ const Slider = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    1
+                    <div className={sliderContent}>
+                        <div className={sliderLeft}>
+                            <img src={SliderLogo} alt=""/>
+                            <div className={sliderInfo}>
+                                <h2 className={sliderTitle}><span>Stan Smith,</span> Forever!</h2>
+                                <button type='button' className={sliderBtn}>Купить</button>
+                            </div>
+                        </div>
+
+                        <div className={sliderRight}>
+                            <img src={Frog} alt=""/>
+                        </div>
+                    </div>
                 </SwiperSlide>
             </Swiper>
 

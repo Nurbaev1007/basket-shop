@@ -18,3 +18,37 @@
     position: relative;
 }
 
+
+.swiper-button-prev {
+    width: 35px!important;
+    height: 35px!important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04)!important;
+    border-radius: 43px!important;
+    transform: rotate(-180deg)!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+.swiper-button-prev::after {
+    transform: rotate(180deg)!important;
+    font-size: 15px!important;
+    color: grey!important;
+}
+
+.swiper-button-next {
+    width: 35px!important;
+    height: 35px!important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04)!important;
+    border-radius: 43px!important;
+    transform: rotate(-180deg)!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+.swiper-button-next::after {
+    transform: rotate(180deg)!important;
+    font-size: 15px!important;
+    color: grey!important;
+}
