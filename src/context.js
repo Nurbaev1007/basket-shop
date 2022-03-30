@@ -12,35 +12,35 @@ export const Context = (props) => {
 
 
     const getAllShoes = (title = '') => {
-      axios(`http://localhost:8080/sneakers?title_like=${title}`)
+      axios(`https://basket-shop1.herokuapp.com/api/sneakers?title_like=${title}`)
           .then(({data}) => setShoes(data))
           .catch((err) => alert('Error'))
     };
 
     const postFavourites = (item) => {
-        axios.post('http://localhost:8080/favourites', {...item})
+        axios.post('https://basket-shop1.herokuapp.com/api/favourites', {...item})
             .then(() => getAllFavourites())
     };
 
     const delFavourites = (id) => {
-      axios.delete(`http://localhost:8080/favourites/${id}`)
+      axios.delete(`https://basket-shop1.herokuapp.com/api/favourites/${id}`)
           .then(() => getAllFavourites())
     };
 
     const getAllFavourites = () => {
-        axios.get('http://localhost:8080/favourites')
+        axios.get('https://basket-shop1.herokuapp.com/api/favourites')
             .then(({data}) => setFavourites(data))
             .catch((err) => alert('Error'))
     };
 
     const getAllOrders = () => {
-        axios.get('http://localhost:8080/orders')
+        axios.get('https://basket-shop1.herokuapp.com/api/orders')
             .then(({data}) => setOrders(data))
             .catch((err) => alert('Error'))
     };
 
     const postOrders = (item) => {
-        axios.post('http://localhost:8080/orders', {...item})
+        axios.post('https://basket-shop1.herokuapp.com/api/orders', {...item})
             .then(() => getAllOrders())
     };
 
