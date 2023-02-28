@@ -19,7 +19,7 @@ const Home = () => {
     useEffect(() => {
         if (search !== '') {
             getAllShoes(search)
-        } else  {
+        } else  { 
             getAllShoes()
         }
     }, [search]);

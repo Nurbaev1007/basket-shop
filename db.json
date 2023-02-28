@@ -67,6 +67,43 @@
       "id": 11
     }
   ],
-  "favourites": [],
-  "orders": []
+  "favourites": [
+    {
+      "id": 4,
+      "title": "Кроссовки Puma X Aka Boku Future Rider",
+      "price": 8999,
+      "imageUrl": "sneakers/4.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "name": "Maksat",
+      "tel": "12312",
+      "city": "Bishkek",
+      "street": "Tynalieva1",
+      "info": "sadsa",
+      "pay": "Наличные",
+      "money": "20000",
+      "checkbox": true,
+      "order": [
+        {
+          "id": 4,
+          "title": "Кроссовки Puma X Aka Boku Future Rider",
+          "price": 8999,
+          "imageUrl": "sneakers/4.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Мужские Кроссовки Nike Blazer Mid Suede11",
+          "price": 8499,
+          "imageUrl": "sneakers/3.jpg"
+        }
+      ],
+      "price": 17498,
+      "nds": 875,
+      "change": 2502,
+      "date": "28.02.2023",
+      "id": 1
+    }
+  ]
 }

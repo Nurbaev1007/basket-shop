@@ -2,7 +2,6 @@ import React, {useContext, useEffect} from 'react';
 import {CustomContext} from "../../context";
 import {Link, useNavigate} from 'react-router-dom';
 import Image from '../../Assets/image10.png'
-
 import styles from './buy.module.css'
 import {AiOutlineArrowLeft} from "react-icons/ai";
 
@@ -17,8 +16,6 @@ const Buy = () => {
     }, []);
     return (
         <section  className='section'>
-
-
             {
                 orders.length ?
                     <>
